@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* 隱藏 checkbox */
+.shape-checkbox {
+  display: none;
+}
+
+.shape-container {
+  display: inline-block;
+  margin: 10px;
+  width: 600px;
+  height: 600px;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* 預設樣式 */
+.shape {
+  fill: #86DFFF; /* 預設內部顏色 */
+  transition: fill 0.3s, stroke 0.3s; /* 平滑過渡效果 */
+}
+
+/* hover 效果 */
+.shape:hover {
+  cursor: pointer; /* 懸停時變成手指 */
+  fill: #5bbadc; /* 懸停時邊框顏色變橘色 */
+}
+
+/* 選中樣式 */
+.shape.selected {
+  fill: green; /* 選中後變藍色 */
+}
